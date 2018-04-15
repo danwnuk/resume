@@ -46,7 +46,7 @@
       "testTsconfig": "../../../tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -54,6 +54,27 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       },
+      "tags": []
+    },
+    {
+      "name": "core",
+      "root": "libs/core/src",
+      "test": "../../../test.js",
+      "appRoot": "",
+      "tags": []
+    },
+    {
+      "name": "resume",
+      "root": "libs/resume/src",
+      "test": "../../../test.js",
+      "appRoot": "",
+      "tags": []
+    },
+    {
+      "name": "shared",
+      "root": "libs/shared/src",
+      "test": "../../../test.js",
+      "appRoot": "",
       "tags": []
     },
     {
