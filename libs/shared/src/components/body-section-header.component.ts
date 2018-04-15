@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BodySectionHeaderComponent implements OnInit {
   @Input() title: string;
-  
+  @Input() icon: string;
+
   constructor() { }
 
   ngOnInit() {
