@@ -11,7 +11,6 @@ import { LanguagesComponent } from './languages/languages.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
-import { InterestsComponent } from './interests/interests.component';
 import { PanelHeaderComponent } from './panel-header/panel-header.component';
 import { BodyHeaderComponent } from './body-header/body-header.component';
 
@@ -23,7 +22,6 @@ const components = [
   ExperienceComponent,
   EducationComponent,
   PersonalProjectsComponent,
-  InterestsComponent,
   PanelHeaderComponent,
   BodyHeaderComponent
 ];
