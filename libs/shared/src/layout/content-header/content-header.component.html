@@ -1,0 +1,15 @@
+<div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start start">
+  <div class="date-container">
+    <div *ngFor="let date of dates">{{date}}</div>
+  </div>
+
+  <div>
+    <h3>{{title}}</h3>
+    <h4 *ngIf="subtitle || subtitleTemplate">
+      <ng-container *ngIf="subtitle">{{subtitle}}</ng-container>
+      <ng-template [ngTemplateOutlet]="subtitleTemplate"></ng-template>
+    </h4>
+
+    <ng-content></ng-content>
+  </div>
+</div>

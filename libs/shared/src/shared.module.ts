@@ -1,14 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatProgressBarModule } from '@angular/material';
 
-import { SectionHeaderComponent } from './components/section-header.component';
-import { SectionContentComponent } from './components/section-content.component';
-import { BodySectionHeaderComponent } from './components/body-section-header.component';
+import { BodySectionHeaderComponent } from './layout/body-section-header/body-section-header.component';
+import { ContentHeaderComponent } from './layout/content-header/content-header.component';
+import { PanelSectionContentComponent } from './layout/panel-section-content/panel-section-content.component';
+import { PanelSectionHeaderComponent } from './layout/panel-section-header/panel-section-header.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
+const components = [
+  BodySectionHeaderComponent,
+  ContentHeaderComponent,
+  PanelSectionContentComponent,
+  PanelSectionHeaderComponent,
+  ProgressBarComponent
+]
 @NgModule({
-  imports: [CommonModule, FlexLayoutModule],
-  declarations: [SectionHeaderComponent, SectionContentComponent, BodySectionHeaderComponent],
-  exports: [SectionHeaderComponent, SectionContentComponent, BodySectionHeaderComponent]
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+    MatProgressBarModule
+  ],
+  declarations: [...components],
+  exports: [...components]
 })
 export class SharedModule {}

@@ -1,0 +1,11 @@
+@import '../../../../../apps/resume-app/src/variables.scss';
+
+.section-header {
+    background-color: $section-header-background-color;
+    padding: 10px 15px;
+}
+
+h2 {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}

@@ -2,16 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { PersonalInformationComponent } from './components/personal-information.component';
-import { SkillsComponent } from './components/skills.component';
-import { SoftwareComponent } from './components/software.component';
-import { LanguagesComponent } from './components/languages.component';
-import { ExperienceComponent } from './components/experience.component';
-import { EducationComponent } from './components/education.component';
-import { PersonalProjectsComponent } from './components/personal-projects.component';
-import { InterestsComponent } from './components/interests.component';
-import { PanelHeaderComponent } from './components/panel-header.component';
-import { ContentHeaderComponent } from './components/content-header.component';
+import { SharedModule } from '@resume/shared';
+
+import { PersonalInformationComponent } from './personal-information/personal-information.component';
+import { SkillsComponent } from './skills/skills.component';
+import { SoftwareComponent } from './software/software.component';
+import { LanguagesComponent } from './languages/languages.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
+import { PersonalProjectsComponent } from './personal-projects/personal-projects.component';
+import { InterestsComponent } from './interests/interests.component';
+import { PanelHeaderComponent } from './panel-header/panel-header.component';
+import { BodyHeaderComponent } from './body-header/body-header.component';
 
 const components = [
   PersonalInformationComponent,
@@ -23,11 +25,16 @@ const components = [
   PersonalProjectsComponent,
   InterestsComponent,
   PanelHeaderComponent,
-  ContentHeaderComponent
+  BodyHeaderComponent
 ];
 
 @NgModule({
-  imports: [CommonModule, FlexLayoutModule],
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+  
+    SharedModule
+  ],
   declarations: [...components],
   exports: [...components]
 })
