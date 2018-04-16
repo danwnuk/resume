@@ -8,9 +8,18 @@
         background-color: $background-color;
         color: white !important;
         padding: 20px 0px;
+        width: 100%;
     }
 
     .content {
         width: 100%;
+    }
+}
+
+@media (max-width: 599px) {
+    .content {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
     }
 }

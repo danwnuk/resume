@@ -24,3 +24,8 @@ html, body {
     }
 }
 
+@media (max-width: 599px) {
+    html, body {
+        width: 100%;
+    }
+}
