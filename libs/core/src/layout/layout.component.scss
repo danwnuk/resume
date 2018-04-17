@@ -20,6 +20,24 @@
     .content {
         padding-left: 5px;
         padding-right: 5px;
-        padding-top: 5px;
+        padding-top: 10px;
+    }
+
+    .layout-container {
+        flex-direction: column !important;
+    }
+
+    .side-panel {
+        max-width: 100% !important;
+    }
+}
+
+@media print {
+    .side-panel {
+        max-width: 30% !important;
+    }
+
+    .layout-container {
+        flex-direction: row !important;
     }
 }
