@@ -1,4 +1,4 @@
-<div fxLayout="row" fxLayoutGap="20px">
+<div fxLayout.gt-xs="row" fxLayout.xs="column" fxLayoutGap="20px">
   <div class="date-container" [fxHide.xs]="true">
     <div *ngFor="let date of dates">{{date}}</div>
   </div>
