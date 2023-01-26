@@ -24,6 +24,7 @@
       },
       "configurations": {
         "production": {
+          "baseHref": "/resume/",
           "budgets": [
             {
               "type": "initial",
